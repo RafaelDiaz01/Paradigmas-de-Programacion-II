@@ -1,21 +1,20 @@
-# Alberto Martínez Barbosa
-# 7 de septiembre de 2024
+# Kevin Rafael Díaz López - 10 de Octubre de 2024
 # En este archivo se ejemplifica el uso de variables en Python.
 
 # Notas:
 # En Python to.do es un objeto.
-# Variable - una variable es un nombre que almacena un valor guardado en la memoria temporal.
+# Una variable es un nombre que almacena un valor guardado en la memoria temporal.
 
 # Toda variable requiere un valor inicial
-semestre = 3        # es una variable que apunta a un objeto de tipo int con valor de 3
+semestre = 4        # es una variable que apunta a un objeto de tipo int con valor de 3
 print(semestre)     # imprime el valor de la variable
-semestre = 4        # la variable ya no apunta al objeto anterior, sino a uno nuevo, por lo que se pierde la referencia
+semestre = 5        # la variable ya no apunta al objeto anterior, sino a uno nuevo, por lo que se pierde la referencia
 print(semestre)
 
 # Se crean varias variables para ejemplificar su uso
-nombre = "Alberto"  # variable de tipo String
-altura = 1.65       # variable de tipo Float
-edad = 31           # variable de tipo Int
+nombre = "Rafael"  # variable de tipo String
+altura = 1.70       # variable de tipo Float
+edad = 19          # variable de tipo Int
 
 # Se imprimen las variables, añadiendo información adicional para comprender lo que se imprime
 print("Nombre:", nombre)
@@ -24,8 +23,8 @@ print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # Se modifican los valores de las variables y se mandan a imprimir
-altura = 1.66
-edad = 30
+altura = 1.71
+edad = 20
 print()
 print("Valores modificados:")
 print("Nombre:", nombre)
@@ -35,7 +34,7 @@ print("Edad: ", edad, "años.")
 
 
 # En Python, las variables son dinámicas, por lo que pueden almacenar otro tipo de dato en cualquier momento
-edad = "treinta y uno"      # edad antes tenía el valor de 31 (Int)
+edad = "veinte"      # edad antes tenía el valor de 20 (Int)
 print()
 print("Edad (con otro tipo de dato):", edad)
 
@@ -52,19 +51,19 @@ print("Edad (con otro tipo de dato):", edad)
 # - Utilizar nombres descriptivos de acuerdo a su uso. Por ejemplo: edad, en lugar de e.
 
 # Ejemplos correctos y con buenas prácticas
-fecha_nacimiento = "1 de enero del 2000"
+fecha_nacimiento = "15 de marzo del 2004"
 clase = "Paradigmas de programación II"
 horas_estudio = 8
-nombre = "Alberto"
+nombre = "Rafael"
 es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
-f = "1 de enero del 2000"
-fechanacimiento = "1 de enero del 2000"
+f = "15 de marzo del 2004"
+fechanacimiento = "15 de marzo del 2004"
 # class = "Paradigmas de programación II"
 # 8horas_estudio = 8
-Nombre = "A l b e r t o"
-NOMBRE = "ALBERTO"
+Nombre = "R a f a e l"
+NOMBRE = "RAFAEL"
 
 # Notar que las variables 'nombre', 'Nombre' y 'NOMBRE', son distintas
 print()
