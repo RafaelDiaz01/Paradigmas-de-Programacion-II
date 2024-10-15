@@ -15,13 +15,13 @@ cadena3 = str(numero3)
 print(f"Número 3.14159265 convertido a cadena: {cadena1}")
 print(f"Número 12 convertido a cadena: {cadena2}")
 print(f"Número 0 convertido a cadena: {cadena3}")
-print()  # Línea en blanco para separar
+print()  # Salto de línea
 
 # Indicar el valor booleano de los números anteriores
 print(f"El valor booleano de 3.14159265 es: {bool(numero1)}")
 print(f"El valor booleano de 12 es: {bool(numero2)}")
 print(f"El valor booleano de 0 es: {bool(numero3)}")
-print()  # Línea en blanco para separar
+print()  # Salto de línea
 
 # c) Se convierten las cadenas a números
 cadena_num1 = "10002"
@@ -37,7 +37,7 @@ numero_convertido3 = int(cadena_num3)  # Convertir a entero
 print(f'Cadena "10002" convertida a entero: {numero_convertido1}')
 print(f'Cadena "100.02" convertida a flotante: {numero_convertido2}')
 print(f'Cadena "0" convertida a entero: {numero_convertido3}')
-print()  # Línea en blanco para separar
+print()  # Salto de línea
 
 # Indicar el valor booleano de las cadenas anteriores
 print(f"El valor booleano de la cadena '10002' es: {bool(cadena_num1)}")
