@@ -1,4 +1,4 @@
-#Kevin Rafael Díaz López
+#Kevin Rafael Díaz López - 17/10/2024
 
 numero1, numero2 = 7,10
 

@@ -1,3 +1,5 @@
+#Kevin Rafael Díaz López
+
 numero1 = float(input("Ingrese un número flotante: "))
 numero2 = float(input("Ingrese otro número flotante: "))
 
