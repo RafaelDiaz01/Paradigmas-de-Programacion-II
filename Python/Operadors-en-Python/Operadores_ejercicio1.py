@@ -12,7 +12,7 @@ print()  # Imprime una línea en blanco.
 cantidad_gastada = float(input("Cantidad gastada: "))  # Lee el valor gastado por el usuario y lo almacena en cantidad_gastada.
 mayor = cantidad_gastada > 5000  # Verifica si el gasto es mayor a 5000 y almacena el resultado booleano en mayor.
 
-meses = input("¿La compra fue a MSI? ")  # Lee si la compra fue realizada a MSI.
+meses = input("¿La compra fue a MSI? (Si/No)")  # Lee si la compra fue realizada a MSI.
 meses = meses.lower() == "si"  # Convierte la entrada a minúsculas y verifica si es "si".
 
 print(f"¿Aplica bonificación de Buen Fin? {mayor and meses}")  # Verifica si ambas condiciones son verdaderas.
