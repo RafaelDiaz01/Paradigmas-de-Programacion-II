@@ -20,7 +20,9 @@ precio_niño = precio_niño * niños  # Calcula el costo total para niños.
 precio_adulto = precio_adulto * adultos  # Calcula el costo total para adultos.
 total = precio_niño + precio_adulto  # Suma los costos para obtener el total.
 
-if dia in ["miercoles", "viernes", "sabado", "domingo"]:  # Verifica si el día está en esta lista.
+if adultos < 0 or niños < 0:
+    print("E R R O R")
+elif dia in ["miercoles", "viernes", "sabado", "domingo"]:  # Verifica si el día está en esta lista.
     print(f"Gracias por su visita {cliente} este día {dia}. El costo total es de ${total}")  # Muestra el total sin descuento.
 elif dia in ["lunes", "martes", "jueves"]:  # Verifica si el día está en esta lista.
     total = total - (total * (10 / 100))  # Aplica un 10% de descuento al total.
