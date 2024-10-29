@@ -1,5 +1,5 @@
 #Kevin Rafael Díaz López - 23/10/2024
-#Programa que determina un grupo de edad.
+#Programa que determina un grupo de edad utilizando sentencias de control.
 
 # Códigos para dar color al título.
 GREEN = "\033[32m"  # Define el color verde para el texto.
