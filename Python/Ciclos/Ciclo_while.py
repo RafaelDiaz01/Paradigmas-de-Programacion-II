@@ -19,7 +19,7 @@ while i <= numero:  # Bucle que se ejecuta mientras "i" sea menor o igual a "num
     print(i , end = " ")  # Imprime el valor de "i" en la misma línea, separado por un espacio.
     i = i + 1  # Incrementa "i" en 1 en cada iteración para avanzar al siguiente número.
 
-print()  # Imprime una línea en blanco para separar los resultados.
+print()  # Imprime una línea en blanco.
 
 # Imprime los números pares desde 0 hasta el número tope ingresado.
 print(f"\nLos números pares del 0 al {numero} son: ")  # Muestra el encabezado de la lista de números pares.
