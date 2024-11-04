@@ -1,1 +1,0 @@
-Directorio para el EXAMEN DEL PRIMER PARCIAL
