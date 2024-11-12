@@ -26,6 +26,12 @@ for i in range(filas+1):
     asteriscos = asterisco * (filas-i)
     print(f"{asteriscos}{espacios}")
 
+print("PIRAMIDE 3")
+for i in range(filas+1):
+    espacios = espacio * (filas-i)
+    asteriscos = asterisco * ((2*i)-1)
+    print(f"{espacios}{asteriscos}")
+
 print("\nPIRAMIDE 4")
 for i in range(filas+1):
     asteriscos = asterisco * i
