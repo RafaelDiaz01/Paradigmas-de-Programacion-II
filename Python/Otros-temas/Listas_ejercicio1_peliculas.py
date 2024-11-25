@@ -36,7 +36,7 @@ while True:
     op = int(input("\n¿Qué desea realizar? "))
 
     if op == 0:
-        print(f"\n{RED}|SALISTE DEL PROGRAMA|{RESET}")
+        print(f"\n\t{RED}|SALISTE DEL PROGRAMA|{RESET}")
         break
     elif op == 1:
         if pelis:
@@ -48,13 +48,13 @@ while True:
             pelis.sort() # Ordena la lista en forma alfabética.
             print(f"PELÍCULAS POR VER ORDENADAS DE LA A-Z: {pelis}\n") # Imprime la lista ordenada de la A - Z. Orden alfabético.
         else:
-            print("NO HAY PELÍCULAS POR VER\n")
+            print("NO HAY PELÍCULAS POR ORDENAR\n")
     elif op == 3:
         if pelis:
             pelis.sort(reverse=True) # Invierte la lista ordenada alfabéticamente.
             print(f"PELÍCULAS POR VER ORDENADAS DE LA Z-A: {pelis}\n") # Imprime la lista ordenada de Z - A.
         else :
-            print("NO HAY PELÍCULAS POR VER\n")
+            print("NO HAY PELÍCULAS POR ORDENAR\n")
     elif op == 4:
         agregar = input("¿Qué película desea añadir? ")
         pelis.append(agregar)
@@ -67,7 +67,7 @@ while True:
             condicion = condicion.lower()
             if condicion == "no":
                 break
-            print() # Salto de línea.
+        print()  # Salto de línea.
     elif op == 6:
         print("\nMENU PARA ELIMINAR PELÍCULAS")
         while True:
@@ -90,11 +90,12 @@ while True:
             elif opcion == 2:
                 if pelis:
                     elimina_indice = (int(input("¿Qué número de índice desea eliminar?"))) - 1  # Se le resta 1 para que el índice que se busca coincida correctamente.
-                    if elimina_indice in pelis:
+                    size = len(pelis)
+                    if size > elimina_indice >= 0:
                         pelis.pop(elimina_indice)
-                        print(f"Se eliminó correctamente la pelicula ubicada en el indice {elimina_indice + 1}")
+                        print(f"Se eliminó correctamente la película ubicada en el indice {elimina_indice + 1}\n")
                     else:
-                        print(f"{RED}|ERROR| NO EXISTE ESA PELÍCULA EN TU LISTA{RESET}")
+                        print(f"{RED}|ERROR| EL ÍNDICE INGRESADO NO ES CORRECTO{RESET}\n")
                 else:
                     print("NO HAY PELÍCULAS EXISTENTES\n")
             else:
