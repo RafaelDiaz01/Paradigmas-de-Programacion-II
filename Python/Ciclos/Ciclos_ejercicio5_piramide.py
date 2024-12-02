@@ -1,5 +1,5 @@
 # Kevin Rafael Díaz López - 07/11/2024
-# Programa que imprime una pirámide mediante el uso de ciclos.
+# Programa que imprime una pirámide mediante el uso de ciclos for.
 
 # Códigos para dar color al título.
 GREEN = "\033[32m"  # Define el color verde para el texto.
