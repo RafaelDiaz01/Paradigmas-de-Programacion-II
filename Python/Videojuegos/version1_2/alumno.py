@@ -2,7 +2,7 @@ import pygame
 
 # Clase para manipular al personaje alumno.
 class Alumno:
-    def __init__(self, screen, esc_alumnos_config):
+    def __init__(self, screen, esc_alumno_config):
         self.screen = screen
         # Se carga la imagen y se obtiene el Rect.
         self.image = pygame.image.load("Media/estudiante.png")
@@ -20,8 +20,8 @@ class Alumno:
         self.is_moving_down = False
 
         # Velocidad
-        self.esc_alumnos_config = esc_alumnos_config # Se crea el objeto
-        self.alumno_speed = self.esc_alumnos_config.alumno_speed # Se crea la variable para la velocidad.
+        self.esc_alumno_config = esc_alumno_config # Se crea el objeto
+        self.alumno_speed = self.esc_alumno_config.alumno_speed # Se crea la variable para la velocidad.
         self.image_rect_centerx = float(self.image_rect.centerx) # Hacemos un cast a flotante.
         self.image_rect_centery = float(self.image_rect.centery) # Cast a flotante
 
