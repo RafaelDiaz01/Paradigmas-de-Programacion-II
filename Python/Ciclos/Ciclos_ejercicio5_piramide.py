@@ -17,25 +17,25 @@ espacio = " "
 
 print("PIRÁMIDE 1")
 for i in range(filas+1):
-    espacios = espacio * i
-    asteriscos = asterisco * i
-    print(f"{asteriscos}{espacios}")
+    espacios = espacio * i # Multiplica el iterador por el espacio y lo almacena en espacios.
+    asteriscos = asterisco * i # Multiplica el iterador por el asterisco y lo almacena en asteriscos.
+    print(f"{asteriscos}{espacios}") # Imprime primero los asteriscos y luego los espacios.
 
 print("\nPIRÁMIDE 2\n")
 for i in range(filas+1):
-    espacios = espacio * i
-    asteriscos = asterisco * (filas-i)
-    print(f"{asteriscos}{espacios}")
+    espacios = espacio * i # Multiplica el iterador por el espacio y lo almacena en espacios.
+    asteriscos = asterisco * (filas-i) # Multiplica el resultado de (filas - iterador) por el asterisco y lo almacena en asteriscos.
+    print(f"{asteriscos}{espacios}") # Imprime primero los asteriscos y luego los espacios.
 
 print("PIRÁMIDE 3")
 for i in range(filas+1):
-    espacios = espacio * (filas-i)
-    asteriscos = asterisco * ((2*i)-1)
-    print(f"{espacios}{asteriscos}")
+    espacios = espacio * (filas-i) # Multiplica el espacio por (filas - iterador) y lo almacena en espacios.
+    asteriscos = asterisco * ((2*i)-1) # Multiplica el asterisco por ((2 por iterador) - 1) y lo almacena en asteriscos.
+    print(f"{espacios}{asteriscos}") # Imprime primero los espacios y luego los asteriscos.
 
 print("\nPIRÁMIDE 4")
 for i in range(filas+1):
-    asteriscos = asterisco * i
-    espacios = espacio * (filas-i)
-    print(f"{espacios}{asteriscos}")
+    asteriscos = asterisco * i # Multiplica el asterisco por el iterador y lo almacena en asteriscos.
+    espacios = espacio * (filas-i) # Multiplica el resultado de (filas - iterador) por el espacio y lo almacena en espacios.
+    print(f"{espacios}{asteriscos}") # Imprime primero los espacios y luego los asteriscos.
 
