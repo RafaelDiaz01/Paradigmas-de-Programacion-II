@@ -21,14 +21,14 @@ def menu():
 # Función para realizar las operaciones básicas.
 def operacion(numero1, numero2, opcion):
     if opcion == 1:
-        return numero1 + numero2, "suma"
+        return numero1 + numero2, "suma" # Realiza la suma.
     elif opcion == 2:
-        return numero1 - numero2, "resta"
+        return numero1 - numero2, "resta" # Realiza la resta.
     elif opcion == 3:
-        return numero1 * numero2, "multiplicación"
+        return numero1 * numero2, "multiplicación" # Realiza la multiplicación.
     elif opcion == 4:
-        if numero2 != 0:
-            return numero1 / numero2, "división"
+        if numero2 != 0: # Verifica la división entre cero.
+            return numero1 / numero2, "división" # Realiza la división.
         else:
             return None, "división (error: división por cero)"
     return None
@@ -39,7 +39,7 @@ while True:
     menu()  # Llama a la función del menú.
     opcion = int(input("\nSeleccione su opción: "))
 
-    if opcion == 0:
+    if opcion == 0: # Verifica la opción salida.
         print("S A L I S T E")
         break
     elif 1 <= opcion <= 4:
@@ -47,7 +47,8 @@ while True:
         numero1 = float(input("Ingrese un número: "))
         numero2 = float(input("Ingrese un segundo número: "))
 
+        # Variable para almacenar el resultado y el nombre de la operación.
         resultado, nombre = operacion(numero1, numero2, opcion)
-        print(f"El resultado de la {nombre} es: {resultado}\n")
+        print(f"El resultado de la {nombre} es: {resultado}\n") # Imprime el resultado.
     else:
-        print("E r r o r: opción no válida\n")
+        print("E r r o r: opción no válida\n") # Imprime error en caso de elegir una opción inválida.
