@@ -1,5 +1,5 @@
 # Kevin Rafael Díaz López - 12/11/2024
-# Programa que muestra las películas que ha visto el usuario.
+# Programa que simula el juego piedra, papel, tijeras, spock, lagarto utilizando diccionarios.
 
 import random
 
