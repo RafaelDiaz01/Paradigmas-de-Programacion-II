@@ -1,8 +1,8 @@
 import pygame
 
 # Clase para manipular al personaje alumno.
-class Alumno:
-    def __init__(self, screen, esc_alumno_config):
+class Mototaxi:
+    def __init__(self, screen, moto_config):
         self.screen = screen
         # Se carga la imagen y se obtiene el Rect.
         self.image = pygame.image.load("Media/estudiante.png")
@@ -20,8 +20,8 @@ class Alumno:
         self.is_moving_down = False
 
         # Velocidad
-        self.esc_alumno_config = esc_alumno_config # Se crea el objeto
-        self.alumno_speed = self.esc_alumno_config.mototaxi_speed # Se crea la variable para la velocidad.
+        self.moto_config = moto_config # Se crea el objeto
+        self.mototaxi_speed = self.moto_config.mototaxi_speed # Se crea la variable para la velocidad.
         self.image_rect_centerx = float(self.image_rect.centerx) # Hacemos un cast a flotante.
         self.image_rect_centery = float(self.image_rect.centery) # Cast a flotante
 
@@ -31,14 +31,14 @@ class Alumno:
 
     # Métod0 que actualiza la posición del personaje.
     def update(self):
-        if self.is_moving_right and (self.image_rect.right < self.screen_rect.right):
-            self.image_rect_centerx += self.alumno_speed # Velocidad a la derecha en flotante.
-        if self.is_moving_left and (self.image_rect.left > self.screen_rect.left):
-            self.image_rect_centerx -= self.alumno_speed # Velocidad a la izquierda en flotante.
-        if self.is_moving_up and (self.image_rect.top > self.screen_rect.top):
-            self.image_rect_centery -= self.alumno_speed # Velocidad hacia arriba.
-        if self.is_moving_down and (self.image_rect.bottom < self.screen_rect.bottom):
-            self.image_rect_centery += self.alumno_speed # Velocidad hacia abajo.
+        if self.is_moving_right and (self.image_rect.right < self.screen_rect.right - 100):
+            self.image_rect_centerx += self.mototaxi_speed # Velocidad a la derecha en flotante.
+        elif self.is_moving_left and (self.image_rect.left > self.screen_rect.left + 100):
+            self.image_rect_centerx -= self.mototaxi_speed # Velocidad a la izquierda en flotante.
+        elif self.is_moving_up and (self.image_rect.top > self.screen_rect.top + 300):
+            self.image_rect_centery -= self.mototaxi_speed # Velocidad hacia arriba.
+        elif self.is_moving_down and (self.image_rect.bottom < self.screen_rect.bottom):
+            self.image_rect_centery += self.mototaxi_speed # Velocidad hacia abajo.
 
         self.image_rect.centerx = self.image_rect_centerx # Asignamos el flotante al entero.
         self.image_rect.centery = self.image_rect_centery # Asignamos el flotante al entero.

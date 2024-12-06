@@ -21,7 +21,7 @@ class Alumno:
 
         # Velocidad
         self.esc_alumnos_config = esc_alumnos_config # Se crea el objeto
-        self.alumno_speed = self.esc_alumnos_config.alumno_speed # Se crea la variable para la velocidad.
+        self.alumno_speed = self.esc_alumnos_config.mototaxi_speed # Se crea la variable para la velocidad.
         self.image_rect_centerx = float(self.image_rect.centerx) # Hacemos un cast a flotante.
         self.image_rect_centery = float(self.image_rect.centery) # Cast a flotante
 
