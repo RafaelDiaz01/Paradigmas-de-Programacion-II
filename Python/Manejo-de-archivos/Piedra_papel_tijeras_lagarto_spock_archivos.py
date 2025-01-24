@@ -1,5 +1,5 @@
 # Kevin Rafael Díaz López - 20/01/2025
-# Programa que simula el juego piedra, papel, tijeras, spock, lagarto utilizando diccionarios.
+# Programa que simula el juego piedra, papel, tijeras, spock, lagarto con manejo de archivos.
 
 import random
 import datetime
