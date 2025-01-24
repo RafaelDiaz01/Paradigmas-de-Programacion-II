@@ -2,6 +2,7 @@
 # Programa que muestra el uso de los conjuntos (desordenados y mutables).
 
 import random
+import datetime
 
 archivo = open("historial_rifa.txt", "a") # Crea el archivo de historial
 
@@ -28,6 +29,7 @@ def menu():
 # Código principal.
 
 participantes = [] # Lista vacía.
+fecha_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") # Fecha
 
 while True:
     menu() # Se llama la función menu.
@@ -73,7 +75,7 @@ while True:
         i = 1
         if participantes:
             ganador = random.choice(participantes)
-            print(f"{GREEN}El ganador de la rifa es {ganador}{RESET}\n")
+            print(f"{GREEN}El ganador de la rifa es {ganador} el dia {fecha_hora}{RESET} \n")
             archivo.write(f"Ganador {i} = {ganador} \n")
             i += 1
         else:

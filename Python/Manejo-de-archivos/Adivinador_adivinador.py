@@ -6,6 +6,7 @@ archivo = open("historial_adivinador.txt", "w") # Crea el archivo de historial
 
 # Códigos para dar color al título.
 GREEN = "\033[32m"  # Define el color verde para el texto.
+RED = "\033[31m" # Define el color rojo para el texto.
 RESET = "\033[0m"  # Define el color de reinicio para volver al color original.
 
 # Título del programa.
@@ -18,8 +19,12 @@ archivo.write(f"Número Ganador: {cpu} \n")
 
 while i <= 5:  # Bucle que se ejecuta mientras "i" sea menor o igual a 5.
     print(f"INTENTO {i}") # Muestra el número de intentos.
-    intento = int(input("Ingrese un número: ")) # Solicita un número.
-    archivo.write(f"Intento {i} = {intento} \n") # Escribe el intento en el archivo de historial.
+    try:
+        intento = int(input("Ingrese un número: ")) # Solicita un número.
+        archivo.write(f"Intento {i} = {intento} \n") # Escribe el intento en el archivo de historial.
+    except ValueError:
+        print(f"{RED}Opción no válida{RESET}\n")
+        continue  # Continúa con el siguiente ciclo del bucle.
 
     if intento == cpu: # Verifica si el número ingresado es igual a número secreto.
         print("\nG A N A S T E")
@@ -38,5 +43,10 @@ if intento != cpu:
     print("P E R D I S T E")
     print(f"El número a adivinar era {cpu}")
     archivo.write(f"Intentos utilizados {i-1}/5 \n")
+
+print(f"\n{GREEN}---HISTORIAL---{RESET}")
+archivo = open("historial_adivinador.txt", "r")
+lectura_archivo = archivo.read()
+print(lectura_archivo)
 
 print(f"\n\t{GREEN}|FIN DEL JUEGO|{RESET}")  # Imprime el fin del programa en color verde.
